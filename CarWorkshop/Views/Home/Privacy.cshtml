@@ -1,0 +1,33 @@
+﻿@model List<Person>
+
+
+
+@{
+    ViewData["Title"] = "Privacy Policy";
+    var currentYear = DateTime.Now.Year;
+    var dayOfWeak = DateTime.Now.DayOfWeek;
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+
+<p>@currentYear</p>
+
+@if(dayOfWeak == DayOfWeek.Sunday || dayOfWeak == DayOfWeek.Saturday)
+{
+    <p>It's weekend'</p>
+}
+else
+{
+    <p>Not yet the weekend :(</p>
+}
+<p>Lista xD </p>
+
+@foreach (var item in Model)
+{
+           
+        <p>@item.Name @item.LastName</p>
+}
+ 
