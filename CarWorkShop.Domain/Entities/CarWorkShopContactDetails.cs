@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarWorkShop.Domain.Antities
+namespace CarWorkShop.Domain.Entities
 {
     public class CarWorkShopContactDetails
     {
         public string? PhoneNumber { get; set; }
         public string? Street { get; set; }
-        public string? city { get; set; }   
+        public string? City { get; set; }   
         public string? PostalCode { get; set; }
     }
 }

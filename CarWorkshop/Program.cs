@@ -1,7 +1,16 @@
+using CarWorkShop.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using CarWorkShop.Infrastructure.Extensions;
+using CarWorkShop.Application.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddAplication();
+
 
 var app = builder.Build();
 

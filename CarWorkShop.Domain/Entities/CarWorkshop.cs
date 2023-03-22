@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CarWorkShop.Domain.Antities
+namespace CarWorkShop.Domain.Entities
 {
     public class CarWorkshop
     {
@@ -13,6 +13,8 @@ namespace CarWorkShop.Domain.Antities
         public string? Description { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public CarWorkShopContactDetails ConstactDetails { get; set; } = default!;
+
+        public string? About { get; set; }
         public string EncodedName { get; private set; } = default!;
 
         public void EncodeName() => EncodedName = Name.ToLower().Replace(" ", "-");
