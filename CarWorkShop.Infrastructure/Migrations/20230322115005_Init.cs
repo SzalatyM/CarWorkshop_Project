@@ -20,10 +20,10 @@ namespace CarWorkShop.Infrastructure.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ConstactDetails_PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConstactDetails_Street = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConstactDetails_City = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConstactDetails_PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactDetails_PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactDetails_Street = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactDetails_City = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ContactDetails_PostalCode = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     EncodedName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

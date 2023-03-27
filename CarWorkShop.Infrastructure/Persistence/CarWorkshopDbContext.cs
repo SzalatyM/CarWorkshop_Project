@@ -20,7 +20,7 @@ namespace CarWorkShop.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Domain.Entities.CarWorkshop>()
-                .OwnsOne(c => c.ConstactDetails);
+                .OwnsOne(c => c.ContactDetails);
         }
     }
 }

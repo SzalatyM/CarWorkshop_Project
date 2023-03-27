@@ -54,7 +54,7 @@ namespace CarWorkShop.Infrastructure.Migrations
 
             modelBuilder.Entity("CarWorkShop.Domain.Entities.CarWorkshop", b =>
                 {
-                    b.OwnsOne("CarWorkShop.Domain.Entities.CarWorkShopContactDetails", "ConstactDetails", b1 =>
+                    b.OwnsOne("CarWorkShop.Domain.Entities.CarWorkShopContactDetails", "ContactDetails", b1 =>
                         {
                             b1.Property<int>("CarWorkshopId")
                                 .HasColumnType("int");
@@ -79,7 +79,7 @@ namespace CarWorkShop.Infrastructure.Migrations
                                 .HasForeignKey("CarWorkshopId");
                         });
 
-                    b.Navigation("ConstactDetails")
+                    b.Navigation("ContactDetails")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

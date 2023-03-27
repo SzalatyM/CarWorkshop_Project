@@ -2,6 +2,8 @@ using CarWorkShop.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using CarWorkShop.Infrastructure.Extensions;
 using CarWorkShop.Application.Extensions;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 

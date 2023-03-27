@@ -12,7 +12,7 @@ namespace CarWorkShop.Domain.Entities
         public string Name { get; set; } = default!;
         public string? Description { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public CarWorkShopContactDetails ConstactDetails { get; set; } = default!;
+        public CarWorkShopContactDetails ContactDetails { get; set; } = default!;
 
         public string? About { get; set; }
         public string EncodedName { get; private set; } = default!;
