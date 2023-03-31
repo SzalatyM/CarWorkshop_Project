@@ -19,7 +19,7 @@ namespace CarWorkShop.Application.CarWorkshop
                 .MaximumLength(20).WithMessage("Name should have maximum of 20 characters")
                  .Custom((value, context) => 
                  {
-                     var existingCarWorkshop = repository.GetByName(value);
+                     var existingCarWorkshop = repository.GetByName(value).Result;
                      if(existingCarWorkshop != null)
                      {
                          context.AddFailure($"{value} is not unique name for car workshop");

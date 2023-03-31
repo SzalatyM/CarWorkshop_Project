@@ -12,7 +12,11 @@ namespace CarWorkshop.Controllers
         {
             _carWorkshopService = carWorkshopService;
         }
-
+        public async Task <IActionResult> Index()
+        {
+            var carWorkshops = await _carWorkshopService.GetAll();
+            return View(carWorkshops);
+        }
         public IActionResult Create()
         {
             return View();

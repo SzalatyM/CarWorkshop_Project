@@ -35,12 +35,12 @@ namespace CarWorkshop.Controllers
                 new Person()
                 {
                     Name = "Michał",
-                    LastName = "Szalaty"
+                    LastName = "pozdro"
                 },
                 new Person()
                 {
                     Name = "Tomek",
-                    LastName = "Siudzinski"
+                    LastName = "ok"
                 }
             };
 
