@@ -29,7 +29,7 @@ namespace CarWorkshop.Controllers
                 return View(carWorkshop);
             }
            await _carWorkshopService.Create(carWorkshop);
-            return RedirectToAction(nameof(Create));
+            return RedirectToAction(nameof(Index));
         }
     
         
